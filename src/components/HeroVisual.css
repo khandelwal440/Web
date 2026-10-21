@@ -1,0 +1,218 @@
+.hero-visual {
+  position: relative;
+  isolation: isolate;
+}
+
+.hero-visual__glow {
+  position: absolute;
+  inset: auto 1.5rem 1rem;
+  height: 66%;
+  z-index: -1;
+  border-radius: 3rem;
+  background: var(--primary-a12);
+  filter: blur(64px);
+  pointer-events: none;
+}
+
+.hero-visual__row {
+  display: flex;
+  align-items: stretch;
+  gap: 0.75rem;
+}
+
+@media (min-width: 640px) {
+  .hero-visual__row {
+    gap: 1rem;
+  }
+}
+
+.hero-visual__reel {
+  position: relative;
+  width: 52%;
+  max-width: 13.5rem;
+  flex-shrink: 0;
+  overflow: hidden;
+  border-radius: 1.4rem;
+  border: 1px solid var(--border-strong);
+  background: #000;
+  box-shadow: var(--shadow-lift);
+  aspect-ratio: 9 / 16;
+}
+
+@media (min-width: 640px) {
+  .hero-visual__reel {
+    max-width: 17rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero-visual__reel {
+    width: 56%;
+    max-width: 16rem;
+  }
+}
+
+.hero-visual__reel img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s var(--ease-out-soft);
+}
+
+.hero-visual__reel:hover img {
+  transform: scale(1.04);
+}
+
+.hero-visual__shade {
+  position: absolute;
+  inset: auto 0 0;
+  height: 33%;
+  background: linear-gradient(to top, oklch(0% 0 0 / 0.9), transparent);
+  pointer-events: none;
+}
+
+.hero-visual__label,
+.hero-visual__views {
+  position: absolute;
+  left: 0.625rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  padding: 0.25rem 0.625rem;
+  border-radius: 999px;
+  background: oklch(0% 0 0 / 0.72);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  font-family: var(--font-display);
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.hero-visual__label {
+  top: 0.625rem;
+  font-size: 0.55rem;
+  letter-spacing: 0.12em;
+}
+
+.hero-visual__label svg {
+  color: var(--primary);
+}
+
+.hero-visual__views {
+  bottom: 0.625rem;
+  font-size: 0.65rem;
+  letter-spacing: 0.06em;
+}
+
+.hero-visual__stack {
+  display: flex;
+  flex: 1;
+  min-width: 0;
+  flex-direction: column;
+  gap: 0.625rem;
+}
+
+.hero-visual__panel {
+  border-radius: 1rem;
+  border: 1px solid var(--border);
+  background: oklch(100% 0 0 / 0.02);
+  padding: 0.75rem;
+  transition: transform 0.25s var(--ease-out-soft), border-color 0.2s;
+}
+
+.hero-visual__panel:hover {
+  transform: translateX(3px);
+  border-color: var(--border-strong);
+}
+
+.hero-visual__panel--prompt {
+  border-color: var(--border-strong);
+  background: oklch(100% 0 0 / 0.03);
+}
+
+.hero-visual__kicker {
+  font-family: var(--font-display);
+  font-size: 0.52rem;
+  font-weight: 900;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--primary);
+}
+
+.hero-visual__lines {
+  display: grid;
+  gap: 0.375rem;
+  margin-top: 0.5rem;
+}
+
+.hero-visual__lines span {
+  display: block;
+  height: 0.375rem;
+  border-radius: 999px;
+  background: #fff;
+}
+
+.hero-visual__steps li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  padding-block: 0.3rem;
+}
+
+.hero-visual__num {
+  display: grid;
+  place-items: center;
+  width: 1.15rem;
+  height: 1.15rem;
+  flex-shrink: 0;
+  border-radius: 999px;
+  background: var(--primary-a15);
+  color: var(--primary);
+  font-family: var(--font-display);
+  font-size: 0.55rem;
+  font-weight: 900;
+}
+
+.hero-visual__step {
+  font-family: var(--font-display);
+  font-size: 0.62rem;
+  font-weight: 900;
+  letter-spacing: 0.02em;
+  line-height: 1.25;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.hero-visual__pack {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  padding: 0.625rem;
+  border-color: var(--primary-a35);
+  background: var(--primary-a07);
+}
+
+.hero-visual__pack img {
+  width: 2.5rem;
+  height: 2.5rem;
+  flex-shrink: 0;
+  border-radius: 0.5rem;
+  object-fit: cover;
+}
+
+.hero-visual__pack p {
+  min-width: 0;
+  font-family: var(--font-display);
+  font-size: 0.62rem;
+  font-weight: 900;
+  letter-spacing: 0.04em;
+  line-height: 1.25;
+  text-transform: uppercase;
+}
+
+.hero-visual__pack span {
+  display: block;
+  margin-top: 0.125rem;
+  font-size: 0.55rem;
+  color: var(--primary);
+}

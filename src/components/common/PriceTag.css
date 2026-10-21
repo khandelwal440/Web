@@ -1,0 +1,82 @@
+.price-tag {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.price-tag--center {
+  justify-content: center;
+}
+
+.price-tag__current {
+  flex-shrink: 0;
+  font-family: var(--font-display);
+  font-weight: 900;
+  letter-spacing: -0.04em;
+  line-height: 0.95;
+}
+
+.price-tag--lg .price-tag__current {
+  font-size: clamp(3.25rem, 2.4rem + 3.6vw, 4.5rem);
+}
+
+.price-tag--md .price-tag__current {
+  font-size: clamp(2.4rem, 2rem + 1.6vw, 2.8rem);
+}
+
+.price-tag__meta {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.3rem;
+}
+
+.price-tag__original {
+  position: relative;
+  text-decoration: none;
+  font-family: var(--font-display);
+  font-weight: 800;
+  color: var(--muted-foreground);
+  font-size: 1rem;
+}
+
+.price-tag--lg .price-tag__original {
+  font-size: 1.1rem;
+}
+
+/* Strike line is drawn in when the price scrolls into view */
+.price-tag__original::after {
+  content: '';
+  position: absolute;
+  left: -2px;
+  right: -2px;
+  top: 52%;
+  height: 2px;
+  background: var(--muted-foreground);
+  transform: scaleX(0);
+  transform-origin: left;
+}
+
+.price-tag[data-animate='true'] .price-tag__original::after {
+  animation: strike 0.5s 0.25s var(--ease-out-soft) forwards;
+}
+
+.price-tag__badge {
+  display: inline-flex;
+  padding: 0.25rem 0.6rem;
+  border-radius: 999px;
+  background: var(--primary);
+  color: #fff;
+  font-family: var(--font-display);
+  font-size: 0.6rem;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  line-height: 1.2;
+  animation: badge-breathe 3.2s ease-in-out infinite;
+}
+
+.price-tag--lg .price-tag__badge {
+  font-size: 0.66rem;
+}

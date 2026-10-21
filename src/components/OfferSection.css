@@ -1,0 +1,51 @@
+.offer__card {
+  max-width: 36rem;
+  margin-inline: auto;
+  padding: 1.75rem 1.25rem 1.5rem;
+  border-radius: 2rem;
+  border: 1px solid var(--primary-a35);
+  background: linear-gradient(180deg, oklch(17% 0.01 27), var(--background) 70%);
+  box-shadow:
+    0 0 0 1px oklch(100% 0 0 / 0.03) inset,
+    0 0 60px -10px color-mix(in oklab, var(--primary) 45%, transparent),
+    0 30px 90px -40px color-mix(in oklab, var(--primary) 70%, transparent);
+  text-align: center;
+}
+
+@media (min-width: 640px) {
+  .offer__card {
+    padding: 2.25rem 2.25rem 1.75rem;
+  }
+}
+
+.offer__eyebrow {
+  font-size: 0.58rem;
+}
+
+.offer__title {
+  margin: 0.75rem 0 1.25rem;
+}
+
+.offer__label {
+  margin-top: 1.5rem;
+  font-family: var(--font-display);
+  font-size: 0.6rem;
+  font-weight: 900;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--muted-foreground);
+}
+
+.offer__list {
+  width: fit-content;
+  margin: 0.9rem auto 0;
+  text-align: left;
+}
+
+.offer__price {
+  margin-top: 2rem;
+}
+
+.offer__cta {
+  margin-top: 1.5rem;
+}
