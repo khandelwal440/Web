@@ -32,29 +32,6 @@
   gap: 0.5rem;
 }
 
-.navbar__pill {
-  display: inline-flex;
-  align-items: center;
-  min-height: 2.5rem;
-  padding-inline: 1rem;
-  border-radius: 999px;
-  border: 1px solid var(--border);
-  font-family: var(--font-display);
-  font-size: 0.68rem;
-  font-weight: 700;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--muted-foreground);
-  transition: border-color 0.15s, color 0.15s;
-}
-
-@media (min-width: 640px) {
-  .navbar__pill {
-    padding-inline: 1.25rem;
-    font-size: 0.72rem;
-  }
-}
-
 .navbar__toggle {
   display: grid;
   place-items: center;
@@ -74,7 +51,6 @@
   height: 1.15rem;
 }
 
-.navbar__pill:hover,
 .navbar__toggle:hover {
   border-color: var(--border-strong);
   color: var(--foreground);

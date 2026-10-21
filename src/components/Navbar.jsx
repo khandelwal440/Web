@@ -30,9 +30,6 @@ export default function Navbar() {
       <nav aria-label="Main" className={`container navbar__bar${scrolled ? ' navbar__bar--compact' : ''}`}>
         <Brand />
         <div className="navbar__actions">
-          <a className="navbar__pill" href={links.access}>
-            My access
-          </a>
           <button
             type="button"
             className="navbar__toggle"

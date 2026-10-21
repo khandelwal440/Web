@@ -34,7 +34,6 @@ Create a `.env` file next to `package.json` to point the buttons at real destina
 
 ```
 VITE_CHECKOUT_URL=https://your-checkout-link
-VITE_ACCESS_URL=https://your-customer-login
 VITE_PREMIUM_URL=https://your-premium-page
 ```
 

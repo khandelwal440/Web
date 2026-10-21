@@ -8,7 +8,6 @@ const env = import.meta.env;
 export const links = {
   // Set VITE_CHECKOUT_URL in a .env file to send every buy button to your payment page.
   checkout: env.VITE_CHECKOUT_URL || '#final-cta',
-  access: env.VITE_ACCESS_URL || '#final-cta',
   premium: env.VITE_PREMIUM_URL || '#final-cta',
 };
 
@@ -267,7 +266,6 @@ export const finalCta = {
 
 export const footer = {
   links: [
-    { label: 'My access', href: links.access },
     { label: 'Products', href: '#everything-included' },
     { label: 'Premium', href: links.premium },
     { label: 'FAQ', href: '#faq' },
