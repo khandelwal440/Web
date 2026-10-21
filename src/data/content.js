@@ -22,8 +22,8 @@ export const brand = {
 };
 
 export const price = {
-  current: '$19.99',
-  original: '$79.99',
+  current: '₹69',
+  original: '₹499.99',
   label: 'One-time payment',
   shortLabel: 'One-time',
 };
@@ -32,6 +32,7 @@ export const assets = {
   heroReel: '/assets/reels/day-2.jpg',
   blueprint: '/assets/blueprint-artwork.svg',
   promptsPack: '/assets/prompts-pack.svg',
+  viralGuide: '/assets/viral-guide.svg',
 };
 
 export const navLinks = [
@@ -45,7 +46,12 @@ export const hero = {
   titleAccent: 'like Stickman.',
   subtitle:
     'The full workflow plus 50+ prompts I use to turn a rough idea into a finished AI episode — one step at a time.',
-  bullets: ['The complete AI video workflow', '50+ copy-ready prompts', 'Instant digital download'],
+  bullets: [
+    'The complete AI video workflow',
+    '50+ copy-ready prompts',
+    'Bonus: How to get your first video viral',
+    'Instant digital download',
+  ],
   primaryCta: `Get instant access — ${price.current}`,
   secondaryCta: "See exactly what's inside",
   finePrint: 'Pay once • Instant access • No subscription',
@@ -145,7 +151,25 @@ export const products = [
       'Reusable prompt templates',
     ],
   },
+  {
+    kicker: 'Bonus guide',
+    title: 'How to Get Your First Video Viral',
+    image: '/assets/viral-guide.svg',
+    imageAlt: 'First Video Viral guide cover artwork in red and white on black',
+    highlight: true,
+    items: [
+      'Hooks that stop the scroll in 2 seconds',
+      'Retention editing tricks',
+      'Episode / series format that brings viewers back',
+      'Captions, hashtags & posting times',
+      '"Comment to vote" engagement loops',
+      'Reading your Insights to repeat what works',
+    ],
+  },
 ];
+
+// Short names for the "you get" lists and thumbnails
+export const productThumbs = products.map((p) => ({ image: p.image, alt: `${p.title} cover` }));
 
 export const preview = {
   title: 'Preview the system',
@@ -189,7 +213,14 @@ export const offer = {
   eyebrow: 'The full system',
   title: 'Everything you need',
   titleLine2: 'to start creating',
-  youGet: ['AI Video Blueprint', '50+ AI Video Prompts', 'The exact creation workflow', 'Reusable prompt system', 'Instant access'],
+  youGet: [
+    'AI Video Blueprint',
+    '50+ AI Video Prompts',
+    'How to Get Your First Video Viral',
+    'The exact creation workflow',
+    'Reusable prompt system',
+    'Instant access',
+  ],
   cta: `Get everything for ${price.current} →`,
   finePrint: 'Secure checkout • Instant access • No subscription',
 };

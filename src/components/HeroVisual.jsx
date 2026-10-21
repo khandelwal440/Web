@@ -45,6 +45,14 @@ export default function HeroVisual() {
               <span>Included</span>
             </p>
           </div>
+
+          <div className="hero-visual__panel hero-visual__pack">
+            <img src={assets.viralGuide} alt="" width="40" height="40" />
+            <p>
+              First video viral
+              <span>Bonus guide</span>
+            </p>
+          </div>
         </div>
       </div>
     </div>

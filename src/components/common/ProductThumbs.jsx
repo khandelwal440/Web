@@ -1,15 +1,21 @@
-import { assets } from '../../data/content.js';
+import { Fragment } from 'react';
+import { productThumbs } from '../../data/content.js';
 import './ProductThumbs.css';
 
-/** The two product covers side by side, joined by a red "+". */
+/** Every product cover side by side, joined by red "+" signs. */
 export default function ProductThumbs() {
   return (
     <div className="product-thumbs">
-      <img src={assets.blueprint} alt="AI Video Blueprint cover" width="128" height="128" loading="lazy" />
-      <span className="product-thumbs__plus" aria-hidden="true">
-        +
-      </span>
-      <img src={assets.promptsPack} alt="50+ AI Video Prompts cover" width="128" height="128" loading="lazy" />
+      {productThumbs.map((product, i) => (
+        <Fragment key={product.image}>
+          {i > 0 && (
+            <span className="product-thumbs__plus" aria-hidden="true">
+              +
+            </span>
+          )}
+          <img src={product.image} alt={product.alt} width="128" height="128" loading="lazy" />
+        </Fragment>
+      ))}
     </div>
   );
 }

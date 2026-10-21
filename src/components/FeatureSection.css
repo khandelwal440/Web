@@ -12,6 +12,12 @@
   }
 }
 
+@media (min-width: 1024px) {
+  .included__grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
 .included__card {
   height: 100%;
   padding: 1.25rem;

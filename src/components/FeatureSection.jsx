@@ -41,7 +41,9 @@ export default function FeatureSection() {
         </div>
 
         <Reveal className="included__footer">
-          <p className="included__both">You get both for {price.current}</p>
+          <p className="included__both">
+            You get all {products.length} for {price.current}
+          </p>
           <a className="btn btn--primary btn--lg included__cta" href={links.checkout}>
             Get instant access — {price.current}
           </a>

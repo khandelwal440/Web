@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <radialGradient id="g" cx=".5" cy=".35" r=".8"><stop offset="0" stop-color="#2a0507"/><stop offset="1" stop-color="#050505"/></radialGradient>
+    <linearGradient id="trend" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#e5141f" stop-opacity="0"/><stop offset="1" stop-color="#e5141f" stop-opacity=".45"/></linearGradient>
+  </defs>
+  <rect width="512" height="512" fill="url(#g)"/>
+  <g opacity=".08" stroke="#fff" stroke-width="22">
+    <path d="M-100 512 L100 0"/><path d="M-10 512 L190 0"/><path d="M80 512 L280 0"/><path d="M170 512 L370 0"/><path d="M260 512 L460 0"/><path d="M350 512 L550 0"/><path d="M440 512 L640 0"/>
+  </g>
+
+  <!-- rising views graph behind the title -->
+  <path d="M40 300 L130 270 L200 284 L290 230 L360 244 L478 168 L478 300Z" fill="url(#trend)"/>
+  <path d="M40 300 L130 270 L200 284 L290 230 L360 244 L478 168" fill="none" stroke="#e5141f" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M446 166 L480 166 L480 200" fill="none" stroke="#e5141f" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <text x="256" y="78" text-anchor="middle" font-family="Archivo, 'Arial Black', Impact, sans-serif" font-weight="900" font-size="30" font-style="italic" fill="#fff" letter-spacing="2">HOW TO GET YOUR</text>
+  <text x="256" y="150" text-anchor="middle" font-family="Archivo, 'Arial Black', Impact, sans-serif" font-weight="900" font-size="70" font-style="italic" fill="#fff" stroke="#000" stroke-width="6" paint-order="stroke" letter-spacing="-2">FIRST VIDEO</text>
+  <text x="256" y="252" text-anchor="middle" font-family="Archivo, 'Arial Black', Impact, sans-serif" font-weight="900" font-size="122" font-style="italic" fill="#e5141f" stroke="#fff" stroke-width="5" paint-order="stroke" letter-spacing="-4">VIRAL</text>
+
+  <!-- icon tiles: eye (views), heart (likes), share, rocket -->
+  <g fill="none" stroke="#e5141f" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <g transform="translate(106 362)">
+      <rect x="-36" y="-36" width="72" height="72" rx="14"/>
+      <path d="M-20 0 Q0 -18 20 0 Q0 18 -20 0Z"/><circle r="6"/>
+    </g>
+    <g transform="translate(206 362)">
+      <rect x="-36" y="-36" width="72" height="72" rx="14"/>
+      <path d="M0 16 L-16 0 A9 9 0 0 1 0 -12 A9 9 0 0 1 16 0Z"/>
+    </g>
+    <g transform="translate(306 362)">
+      <rect x="-36" y="-36" width="72" height="72" rx="14"/>
+      <path d="M-16 4 L16 -14 L6 16 L0 4Z"/><path d="M0 4 L16 -14"/>
+    </g>
+    <g transform="translate(406 362)">
+      <rect x="-36" y="-36" width="72" height="72" rx="14"/>
+      <path d="M0 -20 Q12 -8 8 10 L-8 10 Q-12 -8 0 -20Z"/><circle cy="-4" r="4"/><path d="M-8 6 L-15 16 L-6 13"/><path d="M8 6 L15 16 L6 13"/>
+    </g>
+  </g>
+
+  <g font-family="Archivo, 'Arial Black', Impact, sans-serif" font-weight="900" font-size="15" fill="#fff" text-anchor="middle" letter-spacing="1.5">
+    <text x="106" y="430">VIEWS</text><text x="206" y="430">LIKES</text><text x="306" y="430">SHARES</text><text x="406" y="430">REACH</text>
+  </g>
+
+  <rect x="392" y="460" width="76" height="26" rx="13" fill="#e5141f"/>
+  <text x="430" y="478" text-anchor="middle" font-family="Archivo, 'Arial Black', Impact, sans-serif" font-weight="900" font-size="14" fill="#fff">GUIDE</text>
+</svg>
